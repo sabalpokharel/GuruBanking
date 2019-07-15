@@ -6,7 +6,7 @@
 </listeners>
   <test name="Test">
   <parameter name="browser" value="chrome"/>
-   <!--  <classes>
+    <!-- <classes>
       <class name="com.gurubanking.testcases.LoginTest">
       <methods>   
     <include name="validLoginTest" />

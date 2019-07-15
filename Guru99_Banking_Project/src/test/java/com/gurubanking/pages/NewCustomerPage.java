@@ -48,6 +48,9 @@ public class NewCustomerPage extends TestBase {
 	@FindBy(name = "res")
 	WebElement Reset;
 	
+	@FindBy(xpath="//p[contains(text(),'Customer Registered Successfully!!!')]")
+	WebElement registerSucessMsg;
+	
 	
 	public NewCustomerPage()
 	{
@@ -55,7 +58,7 @@ public class NewCustomerPage extends TestBase {
 	}
 	
 	
-	public void registerCustomer(String name,String Gender, String dob, String address, String city, String state,String pin, String mobile, String email, String password) {
+	public boolean registerCustomer(String name,String Gender, String dob, String address, String city, String state,String pin, String mobile, String email, String password) {
 		
 		CustomerName.sendKeys(name);
 		
@@ -75,6 +78,9 @@ public class NewCustomerPage extends TestBase {
 		Password.sendKeys(password);
 		
 		Submit.click();
+		
+		boolean result= registerSucessMsg.isDisplayed();
+		return result;
 		
 	
 		

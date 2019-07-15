@@ -21,6 +21,8 @@ public class LoginPage extends TestBase{
 	@FindBy(name="btnReset")
 	WebElement Reset;
 	
+	
+	
 	public LoginPage() {
 		
 		PageFactory.initElements(driver, this);

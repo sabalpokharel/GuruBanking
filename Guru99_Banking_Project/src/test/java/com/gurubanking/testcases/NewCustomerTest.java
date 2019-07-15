@@ -3,6 +3,7 @@ package com.gurubanking.testcases;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
@@ -22,18 +23,18 @@ public class NewCustomerTest extends TestBase {
 	public void verifyNewCustomer(String CustomerName,String Gender, String DOB, String Address, String City, String State,String Pin, String Mobile, String email, String Password)
 	{
 		homepage=Login();
-		homepage.newCustomer();
-		newcustomer.registerCustomer(CustomerName, Gender, DOB, Address, City, State, Pin, Mobile, email, Password);
-		
-		
-			
+		newcustomer=homepage.newCustomer();
+		boolean actualResult = newcustomer.registerCustomer(CustomerName, Gender, DOB, Address, City, State, Pin, Mobile, email, Password);
+		Assert.assertEquals(actualResult, true);
 	}
+	
+	
 	
 	@DataProvider(name="Testdata")
 	public String[][] getData() throws IOException
 	{
 		
-		String ExcelPath= (System.getProperty("user.dir"))+"/src/main/java/com/gurubanking/testdata/TestData.xlsx";
+		String ExcelPath= (System.getProperty("user.dir"))+"/src/main/java/com/gurubanking/testdata/TestData2.xlsx";
 		int rowcount=ReadExcel.getRowCount(ExcelPath, "Sheet1");
 		int colcount=ReadExcel.getCellCount(ExcelPath, "Sheet1", 1);
 		String data[][]= new String[rowcount][colcount];
@@ -48,9 +49,7 @@ public class NewCustomerTest extends TestBase {
 		}
 		return data;
 		
-		
-		
-		
+				
 	}
 	@AfterMethod
 	public void getResult(ITestResult result) throws IOException

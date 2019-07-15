@@ -15,15 +15,4 @@
       </class> <!-- com.gurubanking.testcases.NewCustomerTest -->
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.gurubanking.testcases.NewCustomerTest">
-        <methods>
-          <include name="setup"/>
-          <include name="verifyNewCustomer"/>
-        </methods>
-      </class> <!-- com.gurubanking.testcases.NewCustomerTest -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
