@@ -12,7 +12,7 @@ import org.testng.ITestResult;
 public class SeleniumElements {
 
 	public static final int SHORT_SLEEP = 1000;
-	public static final int MEDIUM_SLEEP = 3000;
+	public static final int MEDIUM_SLEEP = 4000;
 	public static final int LONG_SLEEP = 7000;
 
 	public void refresh(Object driver) {
