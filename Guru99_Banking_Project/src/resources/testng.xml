@@ -6,16 +6,16 @@
 </listeners>
   <test name="Test">
   <parameter name="browser" value="chrome"/>
-    <!-- <classes>
+    <classes>
       <class name="com.gurubanking.testcases.LoginTest">
       <methods>   
     <include name="validLoginTest" />
     <include name="resetCredentialsTest" />
     </methods>
     </class>
-    </classes> -->
+    </classes>
     
-    <classes>
+   <!--  <classes>
       <class name="com.gurubanking.testcases.NewCustomerTest">
       <methods>   
     <include name="verifyNewCustomer" />
@@ -23,4 +23,4 @@
     </class>
     </classes>
   </test> 
-</suite> 
+</suite>  -->
