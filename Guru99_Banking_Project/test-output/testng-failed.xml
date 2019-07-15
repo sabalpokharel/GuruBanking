@@ -4,6 +4,7 @@
   <listeners>
     <listener class-name="com.gurubanking.utilities.ExtendReportNG"/>
   </listeners>
+<<<<<<< HEAD
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
@@ -17,4 +18,16 @@
       </class> <!-- com.gurubanking.testcases.NewCustomerTest -->
     </classes>
   </test> <!-- Test(failed) -->
+=======
+  <test name="Test">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.gurubanking.testcases.NewCustomerTest">
+        <methods>
+          <include name="verifyNewCustomer"/>
+        </methods>
+      </class> <!-- com.gurubanking.testcases.NewCustomerTest -->
+    </classes>
+  </test> <!-- Test -->
+>>>>>>> refs/remotes/origin/master
 </suite> <!-- Failed suite [Suite] -->

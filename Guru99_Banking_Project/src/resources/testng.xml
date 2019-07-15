@@ -6,7 +6,11 @@
 </listeners>
   <test name="Test">
   <parameter name="browser" value="chrome"/>
+<<<<<<< HEAD
      <!-- <classes>
+=======
+    <!-- <classes>
+>>>>>>> refs/remotes/origin/master
       <class name="com.gurubanking.testcases.LoginTest">
       <methods>   
     <include name="validLoginTest" />

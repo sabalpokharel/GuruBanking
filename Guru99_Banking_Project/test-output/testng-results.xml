@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="3" failed="1" ignored="0" total="4" passed="0">
+=======
+<testng-results skipped="0" failed="0" total="1" passed="1">
+>>>>>>> refs/remotes/origin/master
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Suite" duration-ms="47204" started-at="2019-07-08T15:26:49Z" finished-at="2019-07-08T15:27:37Z">
+=======
+  <suite name="Suite" duration-ms="31506" started-at="2019-07-15T07:00:47Z" finished-at="2019-07-15T07:01:19Z">
+>>>>>>> refs/remotes/origin/master
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Test" duration-ms="47204" started-at="2019-07-08T15:26:49Z" finished-at="2019-07-08T15:27:37Z">
+=======
+    <test name="Test" duration-ms="31506" started-at="2019-07-15T07:00:47Z" finished-at="2019-07-15T07:01:19Z">
+>>>>>>> refs/remotes/origin/master
       <class name="com.gurubanking.testcases.NewCustomerTest">
+<<<<<<< HEAD
         <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@1ca901e]" name="setup" is-config="true" duration-ms="27870" started-at="2019-07-08T15:26:51Z" finished-at="2019-07-08T15:27:19Z">
+=======
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@59a6e353]" name="setup" is-config="true" duration-ms="24294" started-at="2019-07-15T12:30:49Z" finished-at="2019-07-15T12:31:13Z">
+>>>>>>> refs/remotes/origin/master
           <params>
             <param index="0">
               <value>
@@ -18,7 +34,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="verifyNewCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@1ca901e]" name="verifyNewCustomer" duration-ms="16792" started-at="2019-07-08T15:27:19Z" data-provider="Testdata" finished-at="2019-07-08T15:27:36Z">
+=======
+        <test-method status="PASS" signature="verifyNewCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@59a6e353]" name="verifyNewCustomer" duration-ms="5327" started-at="2019-07-15T12:31:13Z" data-provider="Testdata" finished-at="2019-07-15T12:31:18Z">
+>>>>>>> refs/remotes/origin/master
           <params>
             <param index="0">
               <value>
@@ -37,7 +57,8 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Test1 , Tester]]>
+                <![CDATA[Test1
+Tester]]>
               </value>
             </param>
             <param index="4">
@@ -62,7 +83,7 @@
             </param>
             <param index="8">
               <value>
-                <![CDATA[hjdh@hjd.com]]>
+                <![CDATA[hjdh@hjs.com]]>
               </value>
             </param>
             <param index="9">
@@ -122,14 +143,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewCustomer -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@1ca901e]" name="getResult" is-config="true" duration-ms="219" started-at="2019-07-08T15:27:36Z" finished-at="2019-07-08T15:27:37Z">
+=======
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@59a6e353]" name="getResult" is-config="true" duration-ms="668" started-at="2019-07-15T12:31:18Z" finished-at="2019-07-15T12:31:19Z">
+>>>>>>> refs/remotes/origin/master
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=verifyNewCustomer status=FAILURE method=NewCustomerTest.verifyNewCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@1ca901e] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=verifyNewCustomer status=SUCCESS method=NewCustomerTest.verifyNewCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@59a6e353] output={null}]]]>
+>>>>>>> refs/remotes/origin/master
               </value>
             </param>
           </params>
+<<<<<<< HEAD
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -201,9 +231,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+=======
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="SKIP" signature="setup(java.lang.String)[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@1ca901e]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-08T15:27:37Z" finished-at="2019-07-08T15:27:37Z">
           <reporter-output>
           </reporter-output>
@@ -454,6 +487,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- setup -->
         <test-method status="SKIP" signature="teardown()[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@1ca901e]" name="teardown" is-config="true" duration-ms="0" started-at="2019-07-08T15:27:37Z" finished-at="2019-07-08T15:27:37Z">
+=======
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@59a6e353]" name="teardown" is-config="true" duration-ms="0" started-at="2019-07-15T12:31:19Z" finished-at="2019-07-15T12:31:19Z">
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
