@@ -78,7 +78,6 @@ public class NewCustomerPage extends TestBase {
 		Password.sendKeys(password);
 		
 		Submit.click();
-		
 		boolean result= registerSucessMsg.isDisplayed();
 		return result;
 		

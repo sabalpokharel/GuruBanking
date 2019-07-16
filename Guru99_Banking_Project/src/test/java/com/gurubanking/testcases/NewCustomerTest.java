@@ -3,6 +3,7 @@ package com.gurubanking.testcases;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import org.jsoup.select.Elements;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -26,6 +27,7 @@ public class NewCustomerTest extends TestBase {
 		newcustomer=homepage.newCustomer();
 		boolean actualResult = newcustomer.registerCustomer(CustomerName, Gender, DOB, Address, City, State, Pin, Mobile, email, Password);
 		Assert.assertEquals(actualResult, true);
+		elements.alert(true, "", driver);
 	}
 	
 	

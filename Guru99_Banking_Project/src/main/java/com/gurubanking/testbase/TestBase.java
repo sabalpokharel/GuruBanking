@@ -20,6 +20,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import com.gurubanking.pages.HomePage;
+import com.gurubanking.seleniumElements.SeleniumElements;
 import com.gurubanking.utilities.ReadConfigFile;
 import com.gurubanking.utilities.utilities;
 
@@ -29,12 +30,16 @@ public class TestBase {
 	public static WebDriver driver;
 	
 	static ReadConfigFile readconfig = new ReadConfigFile();
+	public  SeleniumElements elements = new SeleniumElements();
+	
 	
 	@Parameters("browser")
 	@BeforeMethod
 	public static void setup(String br)
 	{
 		TestBase base = new TestBase();
+		
+		
 
 		String directory= System.getProperty("user.dir");
 		String browser = readconfig.getbrowser();
