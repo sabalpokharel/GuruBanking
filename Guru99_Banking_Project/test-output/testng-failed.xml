@@ -10,22 +10,9 @@
     <classes>
       <class name="com.gurubanking.testcases.NewCustomerTest">
         <methods>
-          <include name="verifyNewCustomer"/>
+          <include name="submitWithoutDataTest"/>
         </methods>
       </class> <!-- com.gurubanking.testcases.NewCustomerTest -->
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.gurubanking.testcases.NewCustomerTest">
-        <methods>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="getResult"/>
-          <include name="verifyNewCustomer" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.gurubanking.testcases.NewCustomerTest -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
