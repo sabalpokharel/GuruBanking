@@ -9,7 +9,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 
-public class SeleniumElements {
+import com.gurubanking.testbase.TestBase;
+
+public class SeleniumElements  {
 
 	public static final int SHORT_SLEEP = 1000;
 	public static final int MEDIUM_SLEEP = 4000;
@@ -27,6 +29,7 @@ public class SeleniumElements {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+
 	}
 
 	public void select(String elementProperty, Object element, int index, String textOrValue, String errorMess,
@@ -34,8 +37,10 @@ public class SeleniumElements {
 		WebDriver seleniumDriver = (WebDriver) driver;
 		WebElement seleniumElement = (WebElement) element;
 		try {
-			WebDriverWait wait = new WebDriverWait(seleniumDriver, 40);
-			wait.until(ExpectedConditions.visibilityOf(seleniumElement));
+			
+			 WebDriverWait wait = new WebDriverWait(seleniumDriver, 40);
+			 wait.until(ExpectedConditions.visibilityOf(seleniumElement));
+			 
 
 			Select select = new Select(seleniumElement);
 			if (elementProperty.equals("VALUE")) {
@@ -79,37 +84,52 @@ public class SeleniumElements {
 			seleniumDriver.switchTo().frame(frame);
 		}
 	}
-	
+
 	public void alert(boolean accept, String errorMess, Object driver) {
-    	WebDriver seleniumDriver = (WebDriver) driver;
-    	Alert alert = null;
-    	try {
-        	alert = seleniumDriver.switchTo().alert();        		
-        } catch (RuntimeException firstAttempt) {
-        	try {
-        		pause(MEDIUM_SLEEP);//Wait for chrome
-            	alert = seleniumDriver.switchTo().alert();            	  	
-            } catch (RuntimeException secondAttempt) {
-             	
-            }         	       	
-        } 
-    	if(accept){
-    		alert.accept();  
-    	}else{
-    		alert.dismiss();
-    	}
-
-}
-
-	
-	public String switchToAlert(Object driver)
-	{
 		WebDriver seleniumDriver = (WebDriver) driver;
-    	Alert alert = null;
-    	
-        	alert = seleniumDriver.switchTo().alert();
-        	String alertMessage=alert.getText();
-        	return alertMessage;  	
-}
+		Alert alert = null;
+		try {
+			alert = seleniumDriver.switchTo().alert();
+		} catch (RuntimeException firstAttempt) {
+			try {
+				pause(MEDIUM_SLEEP);// Wait for chrome
+				alert = seleniumDriver.switchTo().alert();
+			} catch (RuntimeException secondAttempt) {
+
+			}
+		}
+		if (accept) {
+			alert.accept();
+		} else {
+			alert.dismiss();
+		}
+
+	}
+
+	public String switchToAlert(Object driver) {
+		WebDriver seleniumDriver = (WebDriver) driver;
+		Alert alert = null;
+
+		alert = seleniumDriver.switchTo().alert();
+		String alertMessage = alert.getText();
+		return alertMessage;
+	}
+
+	public void explictWait(WebElement element, int time, Object driver) {
+		WebDriverWait wait = new WebDriverWait((WebDriver) driver, time);
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	
+	public void rightClick(WebElement element,Object driver)
+	{
+		Actions actions= new Actions((WebDriver) driver);
+		actions.contextClick(element);
+	}
+	
+	public void doubleClick(WebElement element,Object driver)
+	{
+		Actions actions= new Actions((WebDriver) driver);
+		actions.doubleClick(element);
+	}
 
 }
