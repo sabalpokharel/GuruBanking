@@ -100,7 +100,7 @@ public class SeleniumElements {
     	}
 
 }
-<<<<<<< HEAD
+
 	
 	public String switchToAlert(Object driver)
 	{
@@ -111,6 +111,5 @@ public class SeleniumElements {
         	String alertMessage=alert.getText();
         	return alertMessage;  	
 }
-=======
->>>>>>> refs/remotes/origin/master
+
 }
