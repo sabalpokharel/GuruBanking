@@ -5,9 +5,20 @@
 <listener class-name="com.gurubanking.utilities.ExtendReportNG" />
 </listeners>
   <test name="Test">
+<<<<<<< HEAD
   <parameter name="browser" value="chrome"/>
+=======
+  <parameter name="browser" value="chrome"/>
+<<<<<<< HEAD
+     <!-- <classes>
+=======
+>>>>>>> refs/remotes/origin/master
     <!-- <classes>
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/master
+>>>>>>> refs/remotes/origin/master
       <class name="com.gurubanking.testcases.LoginTest">
       <methods>   
     <include name="validLoginTest" />
