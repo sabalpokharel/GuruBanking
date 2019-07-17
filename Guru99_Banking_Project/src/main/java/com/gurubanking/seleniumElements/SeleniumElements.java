@@ -100,4 +100,14 @@ public class SeleniumElements {
     	}
 
 }
+	
+	public String switchToAlert(Object driver)
+	{
+		WebDriver seleniumDriver = (WebDriver) driver;
+    	Alert alert = null;
+    	
+        	alert = seleniumDriver.switchTo().alert();
+        	String alertMessage=alert.getText();
+        	return alertMessage;  	
+}
 }

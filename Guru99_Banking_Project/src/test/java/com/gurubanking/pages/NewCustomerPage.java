@@ -79,13 +79,15 @@ public class NewCustomerPage extends TestBase {
 		
 		Submit.click();
 		boolean result= registerSucessMsg.isDisplayed();
-		return result;
+		return result;	
 		
+	}
 	
-		
-		
-		
-		
+	public String clickSubmitWithoutData()
+	{
+		Submit.click();
+		String alertMessage=elements.switchToAlert(driver);
+		return alertMessage;
 	}
 
 }

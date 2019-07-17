@@ -27,7 +27,17 @@ public class NewCustomerTest extends TestBase {
 		newcustomer=homepage.newCustomer();
 		boolean actualResult = newcustomer.registerCustomer(CustomerName, Gender, DOB, Address, City, State, Pin, Mobile, email, Password);
 		Assert.assertEquals(actualResult, true);
+		elements.pause(1000);
 		
+	}
+	
+	@Test
+	public void submitWithoutDataTest()
+	{
+		homepage=Login();
+		newcustomer=homepage.newCustomer();
+		String actualText= newcustomer.clickSubmitWithoutData();
+		Assert.assertEquals(actualText, "please fill all fields");
 	}
 	
 	

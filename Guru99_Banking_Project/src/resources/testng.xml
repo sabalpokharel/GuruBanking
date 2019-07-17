@@ -19,7 +19,7 @@
     <classes>
       <class name="com.gurubanking.testcases.NewCustomerTest">
       <methods>   
-    <include name="verifyNewCustomer" />
+    <include name="submitWithoutDataTest" />
     </methods>
     </class>
     </classes>
