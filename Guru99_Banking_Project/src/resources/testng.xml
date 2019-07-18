@@ -5,24 +5,25 @@
 <listener class-name="com.gurubanking.utilities.ExtendReportNG" />
 </listeners>
   <test name="Test">
-
   <parameter name="browser" value="chrome"/>
+ 
 
-     <classes>
-        <class name="com.gurubanking.testcases.LoginTest">
+    <!-- <classes>
+
+      <class name="com.gurubanking.testcases.LoginTest">
       <methods>   
     <include name="validLoginTest" />
     <include name="resetCredentialsTest" />
     </methods>
     </class>
-    </classes>
+    </classes> -->
     
-    <!-- <classes>
+    <classes>
       <class name="com.gurubanking.testcases.NewCustomerTest">
       <methods>   
-    <include name="submitWithoutDataTest" />
+    <include name="verifyNewCustomer" />
     </methods>
     </class>
-    </classes> -->
+    </classes>
   </test> 
 </suite> 

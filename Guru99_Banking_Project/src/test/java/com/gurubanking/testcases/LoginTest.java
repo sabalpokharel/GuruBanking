@@ -6,23 +6,22 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.gurubanking.pages.LoginPage;
-
-import selenium.framework.testbase.TestBase;
-import selenium.framework.utilities.ReadConfigFile;
+import com.gurubanking.testbase.TestBase;
+import com.gurubanking.utilities.ReadConfigFile;
 
 public class LoginTest extends TestBase {
 	
 	LoginPage login;
 	ReadConfigFile readconfig=new ReadConfigFile();
 	
-	/*@Parameters("browser")
-	@BeforeMethod
-	public void beforetest(String br)
+	/*@BeforeMethod
+	public void beforetest()
 	{
-		this.setup(br);
+		setup("browser");
 	}*/
 	
 	@Test
@@ -33,7 +32,7 @@ public class LoginTest extends TestBase {
 		String actual=login.login(readconfig.getUsername(),readconfig.getPassword());
 		
 		String username= readconfig.getUsername();
-		String expecetd = "Manger Id : "+username;
+		String expecetd = "Manger I : "+username;
 		
 		Assert.assertEquals(actual, expecetd);
 		}
@@ -57,7 +56,6 @@ public class LoginTest extends TestBase {
 			
 		}
 		driver.quit();
-		
 	}
 
 }

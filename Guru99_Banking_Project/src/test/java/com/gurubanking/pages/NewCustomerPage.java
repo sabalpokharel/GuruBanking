@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import selenium.framework.testbase.TestBase;
+import com.gurubanking.testbase.TestBase;
 
 public class NewCustomerPage extends TestBase {
 	
@@ -78,16 +78,15 @@ public class NewCustomerPage extends TestBase {
 		Password.sendKeys(password);
 		
 		Submit.click();
-		boolean result= registerSucessMsg.isDisplayed();
-		return result;	
 		
-	}
+		boolean result= registerSucessMsg.isDisplayed();
+		return result;
+		
 	
-	public String clickSubmitWithoutData()
-	{
-		Submit.click();
-		String alertMessage=elements.switchToAlert(driver);
-		return alertMessage;
+		
+		
+		
+		
 	}
 
 }
