@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.gurubanking.testbase.TestBase;
+import selenium.framework.testbase.TestBase;
 
 public class NewCustomerPage extends TestBase {
 	
@@ -87,6 +87,17 @@ public class NewCustomerPage extends TestBase {
 		
 		
 		
+	}
+
+
+	public String clickSubmitWithoutData() {
+		
+		
+		Submit.click();
+		String alertmessage=elements.switchToAlert(driver);
+		
+		
+		return alertmessage;
 	}
 
 }
