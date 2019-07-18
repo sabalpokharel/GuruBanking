@@ -12,8 +12,9 @@ import org.testng.annotations.Test;
 
 import com.gurubanking.pages.HomePage;
 import com.gurubanking.pages.NewCustomerPage;
-import com.gurubanking.testbase.TestBase;
-import com.gurubanking.utilities.ReadExcel;
+
+import selenium.framework.testbase.TestBase;
+import selenium.framework.utilities.ReadExcel;
 
 public class NewCustomerTest extends TestBase {
 	

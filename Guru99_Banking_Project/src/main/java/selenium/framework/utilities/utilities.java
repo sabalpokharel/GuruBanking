@@ -1,6 +1,6 @@
-package com.gurubanking.utilities;
+package selenium.framework.utilities;
 
-import com.gurubanking.testbase.TestBase;
+import selenium.framework.testbase.TestBase;
 
 public class utilities extends TestBase
 {

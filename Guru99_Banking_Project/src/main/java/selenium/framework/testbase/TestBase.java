@@ -1,4 +1,4 @@
-package com.gurubanking.testbase;
+package selenium.framework.testbase;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,9 +20,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import com.gurubanking.pages.HomePage;
-import com.gurubanking.seleniumElements.SeleniumElements;
-import com.gurubanking.utilities.ReadConfigFile;
-import com.gurubanking.utilities.utilities;
+
+import selenium.framework.seleniumElements.SeleniumElements;
+import selenium.framework.utilities.ReadConfigFile;
+import selenium.framework.utilities.utilities;
 
 public class TestBase {
 	

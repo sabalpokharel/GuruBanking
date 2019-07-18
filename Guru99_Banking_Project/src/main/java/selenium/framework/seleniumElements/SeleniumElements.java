@@ -1,4 +1,4 @@
-package com.gurubanking.seleniumElements;
+package selenium.framework.seleniumElements;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 
-import com.gurubanking.testbase.TestBase;
+import selenium.framework.testbase.TestBase;
 
 public class SeleniumElements  {
 

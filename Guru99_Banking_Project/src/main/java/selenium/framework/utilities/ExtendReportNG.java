@@ -1,4 +1,4 @@
-package com.gurubanking.utilities;
+package selenium.framework.utilities;
 
 import java.io.File;
 import java.io.IOException;

@@ -9,8 +9,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import com.gurubanking.pages.LoginPage;
-import com.gurubanking.testbase.TestBase;
-import com.gurubanking.utilities.ReadConfigFile;
+
+import selenium.framework.testbase.TestBase;
+import selenium.framework.utilities.ReadConfigFile;
 
 public class LoginTest extends TestBase {
 	

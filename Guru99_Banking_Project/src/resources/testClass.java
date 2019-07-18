@@ -3,7 +3,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.gurubanking.testbase.TestBase;
+import selenium.framework.testbase.TestBase;
 
 public class testClass extends TestBase {
 	
