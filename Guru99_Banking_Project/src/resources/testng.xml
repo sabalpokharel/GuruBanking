@@ -8,21 +8,21 @@
 
   <parameter name="browser" value="chrome"/>
 
-     <!-- <classes>
+     <classes>
         <class name="com.gurubanking.testcases.LoginTest">
       <methods>   
     <include name="validLoginTest" />
     <include name="resetCredentialsTest" />
     </methods>
-    </class> -->
-    <!-- </classes> -->
+    </class>
+    </classes>
     
-    <classes>
+    <!-- <classes>
       <class name="com.gurubanking.testcases.NewCustomerTest">
       <methods>   
     <include name="submitWithoutDataTest" />
     </methods>
     </class>
-    </classes>
+    </classes> -->
   </test> 
 </suite> 

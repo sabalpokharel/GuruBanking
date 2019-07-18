@@ -35,7 +35,7 @@ public class TestBase {
 	
 	@Parameters("browser")
 	@BeforeMethod
-	public static void setup(String br)
+	public void setup(String br)
 	{
 		TestBase base = new TestBase();
 		

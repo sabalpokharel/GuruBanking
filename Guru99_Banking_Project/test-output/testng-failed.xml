@@ -8,11 +8,12 @@
   <test name="Test">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.gurubanking.testcases.NewCustomerTest">
+      <class name="com.gurubanking.testcases.LoginTest">
         <methods>
-          <include name="submitWithoutDataTest"/>
+          <include name="validLoginTest"/>
+          <include name="resetCredentialsTest"/>
         </methods>
-      </class> <!-- com.gurubanking.testcases.NewCustomerTest -->
+      </class> <!-- com.gurubanking.testcases.LoginTest -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Failed suite [Suite] -->
