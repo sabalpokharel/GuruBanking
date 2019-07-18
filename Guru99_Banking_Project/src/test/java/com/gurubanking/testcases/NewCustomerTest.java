@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import org.jsoup.select.Elements;
+import org.openqa.selenium.UnhandledAlertException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -26,8 +27,17 @@ public class NewCustomerTest extends TestBase {
 	{
 		homepage=Login();
 		newcustomer=homepage.newCustomer();
+		try {
 		boolean actualResult = newcustomer.registerCustomer(CustomerName, Gender, DOB, Address, City, State, Pin, Mobile, email, Password);
 		Assert.assertEquals(actualResult, true);
+		}catch(UnhandledAlertException e)
+		{
+			//String message=elements.switchToAlert(driver);
+			elements.alert(true, "errorMess", driver);
+			Assert.fail("UnhandledAlertException", e);
+		}
+		
+		
 		elements.pause(1000);
 		
 	}

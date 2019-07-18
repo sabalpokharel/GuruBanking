@@ -32,7 +32,7 @@ public class LoginTest extends TestBase {
 		String actual=login.login(readconfig.getUsername(),readconfig.getPassword());
 		
 		String username= readconfig.getUsername();
-		String expecetd = "Manger I : "+username;
+		String expecetd = "Manger Id : "+username;
 		
 		Assert.assertEquals(actual, expecetd);
 		}

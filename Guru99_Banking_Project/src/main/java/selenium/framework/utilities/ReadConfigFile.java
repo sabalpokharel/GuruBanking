@@ -12,7 +12,7 @@ Properties prop;
 		try {
 			
 			prop = new Properties();
-			InputStream in= getClass().getClassLoader().getResourceAsStream("com/gurubanking/resources/config.properties");
+			InputStream in= getClass().getClassLoader().getResourceAsStream("selenium/framework/resources/config.properties");
 			prop.load(in);
 			
 			if(prop==null)

@@ -2,21 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners>
-<listener class-name="com.gurubanking.utilities.ExtendReportNG" />
+<listener class-name="selenium.framework.utilities.ExtendReportNG" />
 </listeners>
   <test name="Test">
   <parameter name="browser" value="chrome"/>
- 
-
+  
     <!-- <classes>
-
       <class name="com.gurubanking.testcases.LoginTest">
       <methods>   
     <include name="validLoginTest" />
     <include name="resetCredentialsTest" />
     </methods>
-    </class>
-    </classes> -->
+    </class> -->
+    <!-- </classes> -->
     
     <classes>
       <class name="com.gurubanking.testcases.NewCustomerTest">
@@ -25,5 +23,6 @@
     </methods>
     </class>
     </classes>
+    
   </test> 
 </suite> 
