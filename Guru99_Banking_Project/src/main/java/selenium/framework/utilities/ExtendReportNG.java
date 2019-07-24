@@ -81,6 +81,7 @@ public class ExtendReportNG extends TestListenerAdapter {
 	{
 		logger=extent.createTest(tr.getName()); // create new entry in th report
 		logger.log(Status.SKIP,MarkupHelper.createLabel(tr.getName(),ExtentColor.ORANGE));
+		logger.log(Status.SKIP, tr.getThrowable());
 	}
 	
 	public void onFinish(ITestContext testContext)

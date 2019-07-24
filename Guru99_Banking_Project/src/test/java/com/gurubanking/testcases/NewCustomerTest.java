@@ -18,73 +18,63 @@ import selenium.framework.testbase.TestBase;
 import selenium.framework.utilities.ReadExcel;
 
 public class NewCustomerTest extends TestBase {
-	
+
 	HomePage homepage;
 	NewCustomerPage newcustomer;
-	
-	@Test(dataProvider="Testdata")
-	public void verifyNewCustomer(String CustomerName,String Gender, String DOB, String Address, String City, String State,String Pin, String Mobile, String email, String Password)
-	{
-		homepage=Login();
-		newcustomer=homepage.newCustomer();
+
+	@Test(dataProvider = "Testdata")
+	public void verifyNewCustomer(String CustomerName, String Gender, String DOB, String Address, String City,
+			String State, String Pin, String Mobile, String email, String Password) {
+		homepage = Login();
+		newcustomer = homepage.newCustomer();
 		try {
-		boolean actualResult = newcustomer.registerCustomer(CustomerName, Gender, DOB, Address, City, State, Pin, Mobile, email, Password);
-		Assert.assertEquals(actualResult, true);
-		}catch(UnhandledAlertException e)
-		{
-			//String message=elements.switchToAlert(driver);
+			boolean actualResult = newcustomer.registerCustomer(CustomerName, Gender, DOB, Address, City, State, Pin,
+					Mobile, email, Password);
+			Assert.assertEquals(actualResult, true);
+		} catch (UnhandledAlertException e) {
+			// String message=elements.switchToAlert(driver);
 			elements.alert(true, "errorMess", driver);
 			Assert.fail("UnhandledAlertException", e);
 		}
-		
-		
+
 		elements.pause(1000);
-		
+
 	}
-	
+
 	@Test
-	public void submitWithoutDataTest()
-	{
-		homepage=Login();
-		newcustomer=homepage.newCustomer();
-		String actualText= newcustomer.clickSubmitWithoutData();
+	public void submitWithoutDataTest() {
+		homepage = Login();
+		newcustomer = homepage.newCustomer();
+		String actualText = newcustomer.clickSubmitWithoutData();
 		Assert.assertEquals(actualText, "please fill all fields");
 	}
-	
-	
-	
-	@DataProvider(name="Testdata")
-	public String[][] getData() throws IOException
-	{
-		
-		String ExcelPath= (System.getProperty("user.dir"))+"/src/main/java/com/gurubanking/testdata/TestData2.xlsx";
-		int rowcount=ReadExcel.getRowCount(ExcelPath, "Sheet1");
-		int colcount=ReadExcel.getCellCount(ExcelPath, "Sheet1", 1);
-		String data[][]= new String[rowcount][colcount];
-		
-		for(int i=1;i<=rowcount;i++)
-		{
-			for(int j=0;j<colcount;j++)
-			{
-				data[i-1][j]=ReadExcel.getCellData(ExcelPath,"Sheet1", i, j);
-					
+
+	@DataProvider(name = "Testdata")
+	public String[][] getData() throws IOException {
+
+		String ExcelPath = (System.getProperty("user.dir")) + "/src/main/java/com/gurubanking/testdata/TestData2.xlsx";
+		int rowcount = ReadExcel.getRowCount(ExcelPath, "Sheet1");
+		int colcount = ReadExcel.getCellCount(ExcelPath, "Sheet1", 1);
+		String data[][] = new String[rowcount][colcount];
+
+		for (int i = 1; i <= rowcount; i++) {
+			for (int j = 0; j < colcount; j++) {
+				data[i - 1][j] = ReadExcel.getCellData(ExcelPath, "Sheet1", i, j);
+
 			}
 		}
 		return data;
-		
-				
+
 	}
+
 	@AfterMethod
-	public void getResult(ITestResult result) throws IOException
-	{
-		if(result.getStatus()==ITestResult.FAILURE)
-		{
+	public void getResult(ITestResult result) throws IOException {
+		if (result.getStatus() == ITestResult.FAILURE) {
 			captureScreen(driver, result.getMethod().getMethodName());
-			System.out.println(result.getMethod().getMethodName()+" Failed");
-			
+			System.out.println(result.getMethod().getMethodName() + " Failed");
+
 		}
 		driver.quit();
 	}
-	
 
 }

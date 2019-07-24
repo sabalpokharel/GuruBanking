@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
   <listeners>
     <listener class-name="selenium.framework.utilities.ExtendReportNG"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test name="Test in Chrome">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.gurubanking.testcases.NewCustomerTest">
+      <class name="com.gurubanking.testcases.EditCustomerTest">
         <methods>
+          <include name="verifyEditCutomerSubmit"/>
+        </methods>
+      </class> <!-- com.gurubanking.testcases.EditCustomerTest -->
+    </classes>
+  </test> <!-- Test in Chrome -->
+  <test name="Test in Firefox">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.gurubanking.testcases.EditCustomerTest">
+        <methods>
+          <include name="verifyEditCutomerSubmit"/>
+        </methods>
+      </class> <!-- com.gurubanking.testcases.EditCustomerTest -->
+    </classes>
+  </test> <!-- Test in Firefox -->
+  <test name="Test in Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.gurubanking.testcases.EditCustomerTest">
+        <methods>
+          <include name="verifyEditCutomerSubmit"/>
           <include name="getResult"/>
-          <include name="verifyNewCustomer" invocation-numbers="0"/>
           <include name="teardown"/>
           <include name="setup"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.gurubanking.testcases.NewCustomerTest -->
+      </class> <!-- com.gurubanking.testcases.EditCustomerTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test in Firefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

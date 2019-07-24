@@ -1,6 +1,7 @@
 package selenium.framework.seleniumElements;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -130,6 +131,12 @@ public class SeleniumElements  {
 	{
 		Actions actions= new Actions((WebDriver) driver);
 		actions.doubleClick(element);
+	}
+	
+	public void srollToElement(WebElement element,Object driver)
+	{
+		JavascriptExecutor js = (JavascriptExecutor) (WebDriver) driver;
+		js.executeScript("arguments[0].scrollIntoView();",element);
 	}
 
 }

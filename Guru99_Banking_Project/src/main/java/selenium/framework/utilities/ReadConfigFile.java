@@ -49,5 +49,11 @@ Properties prop;
 		String browser = prop.getProperty("browser");
 		return browser;
 	}
+	
+	public String getCustomerId()
+	{
+		String customerId=prop.getProperty("customerId");
+		return customerId;
+	}
 
 }

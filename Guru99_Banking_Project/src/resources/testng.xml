@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" thread-count="2" parallel="tests">
 <listeners>
 <listener class-name="selenium.framework.utilities.ExtendReportNG" />
 </listeners>
-  <test name="Test">
+  <test name="Test in Chrome">
   <parameter name="browser" value="chrome"/>
+ 
   
     <!-- <classes>
       <class name="com.gurubanking.testcases.LoginTest">
@@ -16,13 +17,32 @@
     </class> -->
     <!-- </classes> -->
     
-    <classes>
+    <!-- <classes>
       <class name="com.gurubanking.testcases.NewCustomerTest">
       <methods>   
     <include name="verifyNewCustomer" />
     </methods>
     </class>
+    </classes> -->
+    
+    <classes>
+      <class name="com.gurubanking.testcases.EditCustomerTest">
+      <methods>   
+    <include name="verifyEditCutomerSubmit" />
+    </methods>
+    </class>
     </classes>
     
   </test> 
+  
+  <test name="Test in Firefox">
+  <parameter name="browser" value="firefox"/>
+   <classes>
+      <class name="com.gurubanking.testcases.EditCustomerTest">
+      <methods>   
+    <include name="verifyEditCutomerSubmit" />
+    </methods>
+    </class>
+    </classes>
+    </test>
 </suite> 
