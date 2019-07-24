@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 
-import selenium.framework.testbase.TestBase;
+
 
 public class SeleniumElements  {
 
@@ -133,7 +133,7 @@ public class SeleniumElements  {
 		actions.doubleClick(element);
 	}
 	
-	public void srollToElement(WebElement element,Object driver)
+	public void scrollToElement(WebElement element,Object driver)
 	{
 		JavascriptExecutor js = (JavascriptExecutor) (WebDriver) driver;
 		js.executeScript("arguments[0].scrollIntoView();",element);
