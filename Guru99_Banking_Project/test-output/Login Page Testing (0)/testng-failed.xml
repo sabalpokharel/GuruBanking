@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Login Page Testing (0)]">
+  <listeners>
+    <listener class-name="selenium.framework.utilities.ExtendReportNG"/>
+  </listeners>
+  <test thread-count="5" name="Verify New Customer(failed)">
+    <classes>
+      <class name="com.gurubanking.testcases.NewCustomerTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="verifyNewCustomer"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.gurubanking.testcases.NewCustomerTest -->
+    </classes>
+  </test> <!-- Verify New Customer(failed) -->
+  <test thread-count="5" name="Submit Without Any Data(failed)">
+    <classes>
+      <class name="com.gurubanking.testcases.NewCustomerTest">
+        <methods>
+          <include name="submitWithoutDataTest"/>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.gurubanking.testcases.NewCustomerTest -->
+    </classes>
+  </test> <!-- Submit Without Any Data(failed) -->
+</suite> <!-- Failed suite [Login Page Testing (0)] -->
