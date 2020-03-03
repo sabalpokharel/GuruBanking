@@ -12,6 +12,9 @@ public class HomePage extends TestBase {
 	@FindBy(xpath ="//a[contains(text(),'New Customer')]")
 	WebElement NewCustomer;
 	
+	@FindBy(xpath="//a[contains(text(),'Edit Customer')]")
+	WebElement EditCustomer;
+	
 	
 	public HomePage()
 	{
@@ -22,6 +25,12 @@ public class HomePage extends TestBase {
 	{
 		NewCustomer.click();
 		return new NewCustomerPage();
+	}
+	
+	public EditCustomerPage EditCustomer()
+	{
+		EditCustomer.click();
+		return new EditCustomerPage();
 	}
 
 }

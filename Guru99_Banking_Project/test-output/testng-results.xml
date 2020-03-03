@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="1" failed="1" ignored="0" total="4" passed="2">
+=======
+<testng-results skipped="1" failed="1" total="3" passed="1">
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="MASTER SUITE" duration-ms="0" started-at="2020-02-19T19:01:07Z" finished-at="2020-02-19T19:01:07Z">
+=======
+  <suite name="Suite" duration-ms="101213" started-at="2019-07-22T10:46:32Z" finished-at="2019-07-22T10:48:13Z">
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
     <groups>
     </groups>
+<<<<<<< HEAD
   </suite> <!-- MASTER SUITE -->
   <suite name="New Customer Testing" duration-ms="102798" started-at="2020-02-19T18:59:24Z" finished-at="2020-02-19T19:01:07Z">
     <groups>
@@ -12,6 +21,134 @@
     <test name="New Customer Cases" duration-ms="102798" started-at="2020-02-19T18:59:24Z" finished-at="2020-02-19T19:01:07Z">
       <class name="com.gurubanking.testcases.NewCustomerTest">
         <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@1536d79]" name="setup" is-config="true" duration-ms="71164" started-at="2020-02-19T18:59:25Z" finished-at="2020-02-19T19:00:36Z">
+=======
+    <test name="Test in Firefox" duration-ms="67780" started-at="2019-07-22T10:46:32Z" finished-at="2019-07-22T10:47:40Z">
+      <class name="com.gurubanking.testcases.EditCustomerTest">
+        <test-method status="FAIL" signature="verifyEditCutomerSubmit()[pri:0, instance:com.gurubanking.testcases.EditCustomerTest@79698539]" name="verifyEditCutomerSubmit" duration-ms="67099" started-at="2019-07-22T16:16:33Z" finished-at="2019-07-22T16:17:40Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at java.util.regex.Matcher.getTextLength(Unknown Source)
+	at java.util.regex.Matcher.reset(Unknown Source)
+	at java.util.regex.Matcher.<init>(Unknown Source)
+	at java.util.regex.Pattern.matcher(Unknown Source)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:399)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:418)
+	at selenium.framework.utilities.ExtendReportNG.onTestSkipped(ExtendReportNG.java:84)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditCutomerSubmit -->
+        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:com.gurubanking.testcases.EditCustomerTest@79698539]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-22T16:16:33Z" finished-at="2019-07-22T16:16:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[connection refused
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'B534DCOK', ip: '10.5.32.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: connection refused
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'B534DCOK', ip: '10.5.32.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+	at selenium.framework.testbase.TestBase.setup(TestBase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="verifyEditCutomerSubmit()[pri:0, instance:com.gurubanking.testcases.EditCustomerTest@79698539]" name="verifyEditCutomerSubmit" duration-ms="1" started-at="2019-07-22T16:17:39Z" finished-at="2019-07-22T16:17:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditCutomerSubmit -->
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:com.gurubanking.testcases.EditCustomerTest@79698539]" name="teardown" is-config="true" duration-ms="0" started-at="2019-07-22T16:17:40Z" finished-at="2019-07-22T16:17:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.gurubanking.testcases.EditCustomerTest -->
+    </test> <!-- Test in Firefox -->
+    <test name="Test in Chrome" duration-ms="101213" started-at="2019-07-22T10:46:32Z" finished-at="2019-07-22T10:48:13Z">
+      <class name="com.gurubanking.testcases.EditCustomerTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.gurubanking.testcases.EditCustomerTest@3796751b]" name="setup" is-config="true" duration-ms="92363" started-at="2019-07-22T16:16:33Z" finished-at="2019-07-22T16:18:05Z">
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
           <params>
             <param index="0">
               <value>
@@ -22,6 +159,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="verifyNewCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@1536d79]" name="verifyNewCustomer" duration-ms="9371" started-at="2020-02-19T19:00:36Z" data-provider="Testdata" finished-at="2020-02-19T19:00:46Z">
           <params>
             <param index="0">
@@ -145,20 +283,33 @@ at com.gurubanking.testcases.NewCustomerTest.verifyNewCustomer(NewCustomerTest.j
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
+=======
+        <test-method status="PASS" signature="verifyEditCutomerSubmit()[pri:0, instance:com.gurubanking.testcases.EditCustomerTest@3796751b]" name="verifyEditCutomerSubmit" duration-ms="6518" started-at="2019-07-22T16:18:05Z" finished-at="2019-07-22T16:18:12Z">
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- verifyNewCustomer -->
         <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@1536d79]" name="getResult" is-config="true" duration-ms="2357" started-at="2020-02-19T19:00:46Z" finished-at="2020-02-19T19:00:48Z">
+=======
+        </test-method> <!-- verifyEditCutomerSubmit -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.gurubanking.testcases.EditCustomerTest@3796751b]" name="getResult" is-config="true" duration-ms="1400" started-at="2019-07-22T16:18:12Z" finished-at="2019-07-22T16:18:13Z">
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=verifyNewCustomer status=FAILURE method=NewCustomerTest.verifyNewCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@1536d79] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=verifyEditCutomerSubmit status=SUCCESS method=EditCustomerTest.verifyEditCutomerSubmit()[pri:0, instance:com.gurubanking.testcases.EditCustomerTest@3796751b] output={null}]]]>
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@1536d79]" name="setup" is-config="true" duration-ms="18936" started-at="2020-02-19T19:00:48Z" finished-at="2020-02-19T19:01:07Z">
           <params>
             <param index="0">
@@ -315,9 +466,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- getResult -->
         <test-method status="SKIP" signature="teardown()[pri:0, instance:com.gurubanking.testcases.NewCustomerTest@1536d79]" name="teardown" is-config="true" duration-ms="0" started-at="2020-02-19T19:01:07Z" finished-at="2020-02-19T19:01:07Z">
+=======
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.gurubanking.testcases.EditCustomerTest@3796751b]" name="teardown" is-config="true" duration-ms="0" started-at="2019-07-22T16:18:13Z" finished-at="2019-07-22T16:18:13Z">
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
+<<<<<<< HEAD
       </class> <!-- com.gurubanking.testcases.NewCustomerTest -->
     </test> <!-- New Customer Cases -->
   </suite> <!-- New Customer Testing -->
@@ -385,4 +540,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.gurubanking.testcases.LoginTest -->
     </test> <!-- Login Test Cases -->
   </suite> <!-- Login Page Testing -->
+=======
+      </class> <!-- com.gurubanking.testcases.EditCustomerTest -->
+    </test> <!-- Test in Chrome -->
+  </suite> <!-- Suite -->
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
 </testng-results>
