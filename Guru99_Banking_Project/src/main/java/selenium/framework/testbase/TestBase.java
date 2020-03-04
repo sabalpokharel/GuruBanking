@@ -12,6 +12,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -76,7 +77,7 @@ public class TestBase {
 		try
 		{
 			driver.findElement(By.name("button")).click();
-		}catch(NoSuchElementException e)
+		}catch(WebDriverException e)
 		{
 			
 		}
@@ -104,7 +105,7 @@ public class TestBase {
 		FileUtils.copyFile(source,target);
 	}
 	
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void teardown()
 	{
 		driver.quit();

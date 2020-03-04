@@ -1,5 +1,7 @@
 package com.gurubanking.pages;
 
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -38,10 +40,21 @@ public class EditCustomerPage extends TestBase{
 	
 	public boolean enterCustomeridAndSubmit(String Id)
 	{
+		boolean result = false;
+		try {
 		CustomerId.sendKeys(Id);
 		SubmitBtn.click();
-		
-		boolean result= EditcustomerText.isDisplayed();
+		}catch(UnhandledAlertException f)
+		{
+			try {
+				
+			elements.alert(true, "UnhandledAlertException", driver);
+			}catch(NoAlertPresentException e)
+			{
+				e.printStackTrace();
+			}
+		}
+		result= EditcustomerText.isDisplayed();
 		return result;
 	}
 	

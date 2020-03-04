@@ -24,7 +24,6 @@ public class EditCustomerTest extends TestBase {
 		homepage = Login();
 		editcustomer = homepage.EditCustomer();
 		boolean actual = editcustomer.editCustomerFormText();
-
 		Assert.assertEquals(actual, true);
 	}
 
@@ -33,11 +32,11 @@ public class EditCustomerTest extends TestBase {
 		homepage = Login();
 		editcustomer = homepage.EditCustomer();
 		boolean actualresult = editcustomer.enterCustomeridAndSubmit(readconfig.getCustomerId());
-
 		Assert.assertEquals(true, actualresult);
+		
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void getResult(ITestResult result) throws IOException {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			captureScreen(driver, result.getMethod().getMethodName());

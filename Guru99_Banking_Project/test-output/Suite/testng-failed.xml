@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <parameter name="browser" value="firefox"/>
+  <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="selenium.framework.utilities.ExtendReportNG"/>
   </listeners>
-  <test name="Test in Chrome">
+  <test name="Test in Chrome1">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.gurubanking.testcases.EditCustomerTest">
@@ -14,19 +14,9 @@
         </methods>
       </class> <!-- com.gurubanking.testcases.EditCustomerTest -->
     </classes>
-  </test> <!-- Test in Chrome -->
-  <test name="Test in Firefox">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="com.gurubanking.testcases.EditCustomerTest">
-        <methods>
-          <include name="verifyEditCutomerSubmit"/>
-        </methods>
-      </class> <!-- com.gurubanking.testcases.EditCustomerTest -->
-    </classes>
-  </test> <!-- Test in Firefox -->
-  <test name="Test in Firefox(failed)" parallel="tests">
-    <parameter name="browser" value="firefox"/>
+  </test> <!-- Test in Chrome1 -->
+  <test name="Test in Chrome1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.gurubanking.testcases.EditCustomerTest">
         <methods>
@@ -34,9 +24,8 @@
           <include name="getResult"/>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="setup"/>
         </methods>
       </class> <!-- com.gurubanking.testcases.EditCustomerTest -->
     </classes>
-  </test> <!-- Test in Firefox(failed) -->
+  </test> <!-- Test in Chrome1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

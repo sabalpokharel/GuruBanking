@@ -13,7 +13,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.ss.usermodel.DataFormatter;
 
 public class ReadExcel {
-	public static FileInputStream fi;
+	public static  FileInputStream fi;
 	public static FileOutputStream fo;
 	public static XSSFWorkbook wb;
 	public static XSSFSheet ws;
