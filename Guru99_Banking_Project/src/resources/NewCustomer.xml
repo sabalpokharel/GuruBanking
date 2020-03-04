@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="New Customer Testing">
+<!-- <listeners>
+<listener class-name="selenium.framework.utilities.ExtendReportNG" />
+</listeners> -->
+
+<test name="New Customer Cases">
+<parameter name="browser" value="chrome"/>
+	<classes>
+		<class name="com.gurubanking.testcases.NewCustomerTest">
+			<methods>
+				<include name="verifyNewCustomer"/>
+				<include name="submitWithoutDataTest"/>
+			</methods>
+		</class>
+	</classes>
+
+</test>
+</suite>
+
+
+
+

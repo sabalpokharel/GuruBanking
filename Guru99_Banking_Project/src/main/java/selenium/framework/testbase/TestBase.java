@@ -73,6 +73,7 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(utilities.implicitWaitinSec, TimeUnit.SECONDS);
 		
 		driver.get(readconfig.getApplicationURL());
+		//driver.get("http://demo.guru99.com/V4/");
 		
 		try
 		{

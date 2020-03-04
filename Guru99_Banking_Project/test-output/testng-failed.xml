@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
+<suite guice-stage="DEVELOPMENT" name="Failed suite [New Customer Testing]">
+=======
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+<<<<<<< HEAD
   <parameter name="browser" value="chrome"/>
+=======
+  <parameter name="browser" value="firefox"/>
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
   <listeners>
     <listener class-name="selenium.framework.utilities.ExtendReportNG"/>
   </listeners>
+<<<<<<< HEAD
   <test name="Test in Chrome1">
+=======
+<<<<<<< HEAD
+  <test thread-count="5" name="New Customer Cases(failed)">
+=======
+  <test name="Test in Chrome">
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.gurubanking.testcases.EditCustomerTest">
         <methods>
+<<<<<<< HEAD
+          <include name="submitWithoutDataTest"/>
+=======
           <include name="verifyEditCutomerSubmit"/>
         </methods>
       </class> <!-- com.gurubanking.testcases.EditCustomerTest -->
@@ -21,11 +40,21 @@
       <class name="com.gurubanking.testcases.EditCustomerTest">
         <methods>
           <include name="verifyEditCutomerSubmit"/>
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
           <include name="getResult"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.gurubanking.testcases.EditCustomerTest -->
     </classes>
+<<<<<<< HEAD
   </test> <!-- Test in Chrome1(failed) -->
+=======
+<<<<<<< HEAD
+  </test> <!-- New Customer Cases(failed) -->
+</suite> <!-- Failed suite [New Customer Testing] -->
+=======
+  </test> <!-- Test in Firefox(failed) -->
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
 </suite> <!-- Failed suite [Suite] -->
+>>>>>>> branch 'master' of https://github.com/Jissgeorge55/GuruBanking.git
