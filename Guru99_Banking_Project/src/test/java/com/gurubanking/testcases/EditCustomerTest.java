@@ -36,6 +36,8 @@ public class EditCustomerTest extends TestBase {
 		
 	}
 
+	// sabal pokharel
+
 	@AfterMethod(alwaysRun=true)
 	public void getResult(ITestResult result) throws IOException {
 		if (result.getStatus() == ITestResult.FAILURE) {
